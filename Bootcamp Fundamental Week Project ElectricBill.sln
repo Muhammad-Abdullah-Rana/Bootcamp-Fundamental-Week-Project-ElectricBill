@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp Fundamental Week Project ElectricBill", "Bootcamp Fundamental Week Project ElectricBill.csproj", "{2851639C-B1C2-4927-8684-C28AA090A786}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2851639C-B1C2-4927-8684-C28AA090A786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2851639C-B1C2-4927-8684-C28AA090A786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2851639C-B1C2-4927-8684-C28AA090A786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2851639C-B1C2-4927-8684-C28AA090A786}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE7ED71C-B61A-4365-BB65-8F18172C17F1}
+	EndGlobalSection
+EndGlobal
