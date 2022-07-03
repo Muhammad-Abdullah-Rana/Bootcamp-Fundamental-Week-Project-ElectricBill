@@ -8,68 +8,68 @@ namespace Bootcamp_Fundamental_Week_Projects
         {
             float amount;
             if (units <= 100)
-                amount = units * lessThan100Units();
+                amount = units * units100OrLess();
             else if (units <= 200)
-                amount = units * lessThan200Units();
+                amount = units * units200OrLess();
             else if (units <= 500)
-                amount = units * lessThan500Units();
+                amount = units * units500OrLess();
             else
-                amount = units * moreThan500Units();
-            return amount += (amount * calculateTax());
+                amount = units * unitsMoreThan500();
+            return amount += calculateTax(amount);
         }
-        protected abstract int lessThan100Units();
-        protected abstract int lessThan200Units();
-        protected abstract int lessThan500Units();
-        protected abstract int moreThan500Units();
-        protected abstract float calculateTax();
+        protected abstract int units100OrLess();
+        protected abstract int units200OrLess();
+        protected abstract int units500OrLess();
+        protected abstract int unitsMoreThan500();
+        protected abstract float calculateTax(float amount);
     }
 
     class ResidentialBill : ElectricBill
     {
 
-        protected override int lessThan100Units()
+        protected override int units100OrLess()
         {
             return 5;
         }
-        protected override int lessThan200Units()
+        protected override int units200OrLess()
         {
             return 17;
         }
-        protected override int lessThan500Units()
+        protected override int units500OrLess()
         {
             return 23;
         }
-        protected override int moreThan500Units()
+        protected override int unitsMoreThan500()
         {
             return 69;
         }
-        protected override float calculateTax()
+        protected override float calculateTax(float amount)
         {
-            return (float)13 / 100;
+            return amount * (float)13 / 100;
         }
     }
 
     class CommercialBill : ElectricBill
     {
-        protected override int lessThan100Units()
+        protected override int units100OrLess()
         {
             return 8;
         }
-        protected override int lessThan200Units()
+        protected override int units200OrLess()
         {
             return 21;
         }
-        protected override int lessThan500Units()
+        protected override int units500OrLess()
         {
             return 23;
         }
-        protected override int moreThan500Units()
+        protected override int unitsMoreThan500()
         {
             return 79;
         }
-        protected override float calculateTax()
+        protected override float calculateTax(float amount)
         {
-            return (float)17 / 100;
+            return amount * (float)17 / 100;
         }
     }
     class Programs
